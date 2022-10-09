@@ -22,11 +22,10 @@ const Content = props => (
 
             <Route path="/useEffect" element={<UseEffect />} />
 
-            {/* 
-            <Route path="/useRef">
-                <UseRef />
-            </Route>
+            <Route path="/useRef" element={<UseRef />} />
 
+            {/* 
+            
             <Route path="/useCallback">
                 <UseCallback />
             </Route>
