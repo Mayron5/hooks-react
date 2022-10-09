@@ -20,10 +20,9 @@ const Content = props => (
 
             <Route path="/useState" element={<UseState />} />
 
-            {/* <Route path="/useEffect">
-                <UseEffect />
-            </Route>
+            <Route path="/useEffect" element={<UseEffect />} />
 
+            {/* 
             <Route path="/useRef">
                 <UseRef />
             </Route>
