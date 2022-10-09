@@ -24,15 +24,11 @@ const Content = props => (
 
             <Route path="/useRef" element={<UseRef />} />
 
+            <Route path="/useMemo" element={<UseMemo />} />
+                
             {/* 
-            
-            <Route path="/useCallback">
-                <UseCallback />
-            </Route>
 
-            <Route path="/useMemo">
-                <UseMemo />
-            </Route>
+            <Route path="/useCallback" element={<UseCallback />} />
 
             <Route path="/useContext">
                 <UseContext />
