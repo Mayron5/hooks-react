@@ -27,13 +27,10 @@ const Content = props => (
             <Route path="/useMemo" element={<UseMemo />} />
                 
             <Route path="/useCallback" element={<UseCallback />} />
-            
+
+            <Route path="/useContext" element={<UseContext />} />
+
             {/* 
-
-            <Route path="/useContext">
-                <UseContext />
-            </Route>
-
             <Route path="/useReducer">
                 <UseReducer />
             </Route>
