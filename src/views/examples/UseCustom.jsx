@@ -2,10 +2,16 @@ import React from 'react'
 import PageTitle from '../../components/layout/PageTitle'
 import SectionTitle from '../../components/layout/SectionTitle'
 import { useCounter } from '../../hooks/useCounter'
+import { useFetch } from '../../hooks/useFetch'
 
 const UseRef = (props) => {
 
     const [count, incremento, decremento] = useCounter(0);
+    const response = useFetch('http://files.cod3r.com.br/curso-react/estados.json');
+
+    const showStates = (states) => {
+        return states.map(state => <li key={state.sigla} >{state.nome} - {state.sigla}</li>)
+    }
 
     return (
         <div className="UseCustom">
@@ -20,6 +26,13 @@ const UseRef = (props) => {
                     <button className="btn" onClick={_ => incremento()}>+1</button>
                     <button className="btn" onClick={_ => decremento()}>-1</button>
                 </div>
+            </div>
+
+            <SectionTitle title="Exercício #02" />
+            <div className="center">
+                <ul>
+                    {response.data ? showStates(response.data) : false}
+                </ul>
             </div>
         </div>
     )
