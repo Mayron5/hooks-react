@@ -30,11 +30,10 @@ const Content = props => (
 
             <Route path="/useContext" element={<UseContext />} />
 
-            {/* 
-            <Route path="/useReducer">
-                <UseReducer />
-            </Route>
+            <Route path="/useReducer" element={<UseReducer />} />
 
+            {/* 
+            
             <Route path="/useCustom">
                 <UseCustom />
             </Route> */}
