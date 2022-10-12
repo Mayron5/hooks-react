@@ -32,12 +32,8 @@ const Content = props => (
 
             <Route path="/useReducer" element={<UseReducer />} />
 
-            {/* 
-            
-            <Route path="/useCustom">
-                <UseCustom />
-            </Route> */}
-
+            <Route path="/useCustom" element={<UseCustom />} />
+                
             <Route path="*" element={<NotFound />} />
 
         </Routes>
